@@ -43,10 +43,11 @@ class TV:
         return self._canal
     
     def setCanal (self, canal):
-        if ((canal >= 1 and canal <=1) and (self._estado)):
+        if ((canal >= 1 and canal <=120) and (self._estado)):
             self._canal = canal
         else:
             pass
+        
     @classmethod    
     def getNumTV(cls):
         return cls._numTV
